@@ -1,0 +1,10 @@
+<div>
+    <label for="subvote">Vote</label>
+    <input type="text" id="name" class="form-control"
+                required minlength="4" maxlength="24"
+                name="subvote" [(ngModel)]="subVote"
+                #name="ngModel" >
+
+
+    <pre style="background-color: green">{{subVote}}</pre>
+</div>

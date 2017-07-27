@@ -7,4 +7,24 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+
+  public films: Movie;
+
+  constructor() {
+    
+  }
+
+  ngOnInit() {
+    this.films = {name: "25th hour", vote: 5.8};
+  }
+
+  onSubmit() {
+    console.log("From outside");
+  }
+
+}
+
+export interface Movie {
+  name: string;
+  vote: number;
 }
